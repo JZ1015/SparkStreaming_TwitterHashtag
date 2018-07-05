@@ -19,7 +19,7 @@ if __name__=="__main__":
         cell=line.split(",")
         return Vectors.dense([float(cell[0]),float(cell[1])])
     
-    trainingStream=ssc.textFileStream("file:///Users/jiangyunzhu/data/tweets/training")\
+    trainingStream=ssc.textFileStream(":/tweets/training")\
                       .map(parseTrainingData)
     
     
